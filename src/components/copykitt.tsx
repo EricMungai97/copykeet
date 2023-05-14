@@ -7,7 +7,7 @@ import logo from "/public/copykittLogo.svg";
 const CopyKitt: React.FC = () => {
   const CHARACTER_LIMIT: number = 32;
   const ENDPOINT: string =
-    "https://copykitt-api.vercel.app/generate_snippets_and_keywords";
+    "https://copykeet-api.vercel.app/generate_snippets_and_keywords";
   const [prompt, setPrompt] = React.useState("");
   const [snippet, setSnippet] = React.useState("");
   const [keywords, setKeywords] = React.useState([]);
