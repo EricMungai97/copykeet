@@ -3,6 +3,7 @@ import Form from "./form";
 import Results from "./results";
 import Image from "next/image";
 import logo from "/public/copykittLogo.svg";
+import Loader from "./loader";
 
 const CopyKitt: React.FC = () => {
   const CHARACTER_LIMIT: number = 32;
@@ -36,6 +37,13 @@ const CopyKitt: React.FC = () => {
   };
 
   let displayedElement = null;
+
+  if (isLoading) {
+    displayedElement = (
+      <Loader />
+    );
+
+  }
 
   if (hasResult) {
     displayedElement = (
