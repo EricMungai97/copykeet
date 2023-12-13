@@ -5,7 +5,7 @@ import { PuffLoader } from "react-spinners";
 const Loader = () => {
     return (
         <div
-        className="
+        className=" bg-slate-700
         flex
         flex-col
         justify-center
